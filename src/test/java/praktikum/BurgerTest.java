@@ -1,12 +1,14 @@
 package praktikum;
 
-import org.junit.*;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import static org.junit.Assert.*;
 @RunWith(MockitoJUnitRunner.class)
 
 public class BurgerTest {
@@ -28,10 +30,11 @@ public class BurgerTest {
         burger.ingredients.clear();
         burger.addIngredient(ingredient);
     }
-@After
-public void clearIngredients() {
-    burger.ingredients.clear();
-}
+
+    @After
+    public void clearIngredients() {
+        burger.ingredients.clear();
+    }
 
     @Test
     public void addIngredient() {

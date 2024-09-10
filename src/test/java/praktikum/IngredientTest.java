@@ -1,14 +1,12 @@
 package praktikum;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static praktikum.IngredientType.SAUCE;
 
 public class IngredientTest {
-    private Ingredient ingredient = new Ingredient(SAUCE,"IngredientName", 20.0f);
+    private Ingredient ingredient = new Ingredient(SAUCE, "IngredientName", 20.0f);
 
     @Test
     public void getPrice() {

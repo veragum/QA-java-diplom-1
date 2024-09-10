@@ -3,10 +3,11 @@ package praktikum;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class BunTest {
-private Bun bun = new Bun("TestName", 42.0f);
+    private Bun bun = new Bun("TestName", 42.0f);
+
     @Test
     public void getName() {
         String result = bun.getName();
